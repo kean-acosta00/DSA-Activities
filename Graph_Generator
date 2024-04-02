@@ -1,0 +1,129 @@
+import math
+
+class Graph_Gen:
+    def __init__(self):
+        self.x = list(range(1, 51))
+
+    def graph1(self):
+        result_list = []
+        for x_val in self.x:
+            i = x_val   # x2+7x+2
+            result = (i**2) + (7 * i) + 2
+            result_list.append(result)
+
+        with open('graph1_result.txt', 'w') as file:
+            for value in result_list:
+                file.write(str(value) + '\n')
+
+    def graph2(self):
+        result_list = []
+        for x_val in self.x:
+            i = x_val   # 3x+2
+            result = (3 * i) + 2
+            result_list.append(result)
+
+        with open('graph2_result.txt', 'w') as file:
+            for value in result_list:
+                file.write(str(value) + '\n')
+
+    def graph3(self):
+        result_list = []
+        for x_val in self.x:
+            i = x_val   # x2
+            result = i**2
+            result_list.append(result)
+
+        with open('graph3_result.txt', 'w') as file:
+            for value in result_list:
+                file.write(str(value) + '\n')
+
+    def graph4(self):
+        result_list = []
+        for x_val in self.x:
+            i = x_val   # x3
+            result = i**3
+            result_list.append(result)
+
+        with open('graph4_result.txt', 'w') as file:
+            for value in result_list:
+                file.write(str(value) + '\n')
+
+    def graph5(self):
+        result_list = []
+        for x_val in self.x:
+            i = x_val   # x5
+            result = i**5
+            result_list.append(result)
+
+        with open('graph5_result.txt', 'w') as file:
+            for value in result_list:
+                file.write(str(value) + '\n')
+
+    def graph6(self):
+        result_list = []
+        for x_val in self.x:
+            i = x_val   # x3 + 2x2+x+10
+            result = (i**3) + (2 * (i**2)) + i + 10
+            result_list.append(result)
+
+        with open('graph6_result.txt', 'w') as file:
+            for value in result_list:
+                file.write(str(value) + '\n')
+
+    def graph7(self):
+        result_list = []
+        for x_val in self.x:
+            i = x_val   # x4 + 3x3 + 2x2 - x + 11
+            result = (i**4) - (3 * (i**3)) + (2 * (i**2)) - i + 11
+            result_list.append(result)
+
+        with open('graph7_result.txt', 'w') as file:
+            for value in result_list:
+                file.write(str(value) + '\n')
+
+    def graph8(self):
+        result_list = []
+        for x_val in self.x:
+            i = x_val   # sin(x)
+            result = math.sin(math.radians(i))
+            result_list.append(result)
+
+        with open('graph8_result.txt', 'w') as file:
+            for value in result_list:
+                file.write(str(value) + '\n')
+
+    def graph9(self):
+        result_list = []
+        for x_val in self.x:
+            i = x_val   # cos(x)
+            result = math.cos(math.radians(i))
+            result_list.append(result)
+
+        with open('graph9_result.txt', 'w') as file:
+            for value in result_list:
+                file.write(str(value) + '\n')
+
+    def graph10(self):
+        result_list = []
+        for x_val in self.x:
+            i = x_val   # x5 + 4x4 + x# - 2x2 + 100
+            result = (i**5) + (4 * (i**4)) + (i**3) - (2 * (i**2)) + 100
+            result_list.append(result)
+
+        with open('graph10_result.txt', 'w') as file:
+            for value in result_list:
+                file.write(str(value) + '\n')
+
+
+generator = Graph_Gen()
+
+generator.graph1()
+generator.graph2()
+generator.graph3()
+generator.graph4()
+generator.graph5()
+generator.graph6()
+generator.graph7()
+generator.graph8()
+generator.graph9()
+generator.graph10()
