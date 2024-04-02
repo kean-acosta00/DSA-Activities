@@ -1,0 +1,44 @@
+import matplotlib.pyplot as plt
+from Graph_Generator import Graph_Gen
+
+generator = Graph_Gen()
+
+while True:
+    print("Choose which graph to show: ")
+    print("Type 1 to choose a specific graph, 2 for all, and 3 for exit.")
+
+    choice = int(input("Choose your option: "))
+
+    if choice == 1:
+        graph = int(input("Which specific graph 1-10: "))
+        file_name = f'graph{graph}_result.txt'
+        with open(file_name, 'r') as file:
+            data = [float(line.strip()) for line in file]
+
+        plt.figure(1)    
+        plt.plot(data, label=f'Graph {graph}')
+        plt.xlabel('x')
+        plt.ylabel('y')
+        plt.show()
+
+    elif choice == 2:
+        plt.figure(1)  
+        for i in range(1, 11):
+            file_name = f'graph{i}_result.txt'
+            with open(file_name, 'r') as file:
+                data = [float(line.strip()) for line in file]
+
+            plt.plot(data, label=f'Graph {i}')
+
+        plt.xlabel('x')
+        plt.ylabel('y')
+        plt.title('All Graphs')
+        plt.legend()
+        plt.show()
+
+    elif choice == 3:
+        print("Exiting program...")
+        break
+
+    else:
+        print("Invalid choice. Please enter 1, 2, or 3.")
