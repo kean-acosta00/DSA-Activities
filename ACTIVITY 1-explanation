@@ -1,0 +1,16 @@
+# STEP 1: A CLASS FOR THE GRAPH CALCULATOR 
+# The code defines a class, `Graph_Gen`, which generates various graphs and saves the results in text files.
+# It initializes `x`, a list of integers from 1 to 50.
+# The class has 10 methods, `graph1` through `graph10`, each calculating a specific graph's values and saving them in a corresponding text file.
+# Each method computes graph values based on different mathematical expressions, then writes them to a file.
+# It imports the `math` module for trigonometric functions.
+# An instance of `Graph_Gen` is created, and each graph method is called to generate and save its corresponding graph's results.
+
+# STEP 2: GRAPH PRESENTATION AND UI
+# The program defines a class `Graph_Gen` for generating and plotting graphs.
+# It has two methods: `plot_specific_graph` to plot a specific graph and `plot_all_graphs` to plot all graphs.
+# The main loop prompts the user to choose between plotting a specific graph, all graphs, or exiting the program.
+# If the user chooses to plot a specific graph, it prompts for the graph number and plots that graph.
+# If the user chooses to plot all graphs, it plots all 10 graphs.
+# The program handles file not found errors gracefully.
+# The program runs until the user chooses to exit.
