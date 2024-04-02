@@ -6,11 +6,15 @@
 # It imports the `math` module for trigonometric functions.
 # An instance of `Graph_Gen` is created, and each graph method is called to generate and save its corresponding graph's results.
 
-# STEP 2: GRAPH PRESENTATION AND UI
-# The program defines a class `Graph_Gen` for generating and plotting graphs.
-# It has two methods: `plot_specific_graph` to plot a specific graph and `plot_all_graphs` to plot all graphs.
-# The main loop prompts the user to choose between plotting a specific graph, all graphs, or exiting the program.
-# If the user chooses to plot a specific graph, it prompts for the graph number and plots that graph.
-# If the user chooses to plot all graphs, it plots all 10 graphs.
-# The program handles file not found errors gracefully.
-# The program runs until the user chooses to exit.
+# STEP 2: GRAPH PRESENTATION AND OPTIONS
+# The code imports libraries for plotting graphs and the `Graph_Gen` class.
+# It creates a graph generator instance.
+# The program asks the user to choose:
+  # Show a specific graph (1-10).
+  # Display all graphs.
+  # Exit the program.
+# If the user picks:
+  # A specific graph: It reads the data and plots it.
+  # All graphs: It plots all graphs on one plot with different labels.
+  # Exit: It ends the program.
+# If the user enters an invalid option, it prompts them to choose a valid one.
